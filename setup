@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#==================================================#
+# Setup script for the Tensorflow For Poets Lab    #
+# hosted by Code-labs.                             #
+#                                                  #
+#              Author: David Kroell                #
+#==================================================#
+
+# Before you start any training, you'll need a set of
+# images to teach the model about the new classes you
+# want to recognize.
+
+curl http://download.tensorflow.org/example_images/flower_photos.tgz | tar xz -C tf_files
+
+# This will download the pictures into tf_files
