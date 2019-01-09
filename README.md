@@ -10,6 +10,8 @@ This project is being conducted on an Arch Linux virtual machine. The following 
 ```bash
 $ sudo pacman -S tensorflow
 $ sudo pip install -r requirements.pip
+$ # Run the setup script...
+$ . ./setup
 ```
 
 

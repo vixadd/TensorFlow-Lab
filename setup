@@ -14,3 +14,17 @@
 curl http://download.tensorflow.org/example_images/flower_photos.tgz | tar xz -C tf_files
 
 # This will download the pictures into tf_files
+
+# The MobileNet is configurable in two ways:
+#
+#    Input image resolution: 128,160,192, or 224px.
+#    Unsurprisingly, feeding in a higher resolution image takes more
+#    processing time, but results in better classification accuracy.
+#
+#    The relative size of the model as a fraction of the largest
+#    MobileNet: 1.0, 0.75, 0.50, or 0.25.
+#
+# We will use 224 0.5 for this codelab.
+
+export IMAGE_SIZE=224
+export ARCHITECTURE="mobilenet_0.50_${IMAGE_SIZE}"
