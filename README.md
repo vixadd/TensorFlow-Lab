@@ -8,8 +8,8 @@ https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0
 
 This project is being conducted on an Arch Linux virtual machine. The following instructions involve the basic setup for the project.
 ```bash
-$ sudo pacman -S tensorflow
-$ sudo pip install -r requirements.pip
+$ sudo pacman -S tensorflow tensorboard
+$ sudo pip2 install -r requirements.pip
 $ # Run the setup script...
 $ . ./setup
 ```

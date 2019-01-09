@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#=============================================#
+#    Monitoring script using tensorboard.     #
+#                                             #
+#              Author: David Kroell           #
+#=============================================#
+
+pkill -f "tensorboard"
+tensorboard --logdir tf_files/training_summaries &
