@@ -1,1 +1,4 @@
-#tf_files/*
+
+# We don't want to save the 15MB of photos that this comes with.
+# Be a regular-ass developer and run the setup scripts.
+tf_files/flower_photos/
