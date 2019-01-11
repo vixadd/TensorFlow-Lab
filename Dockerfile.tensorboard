@@ -1,0 +1,11 @@
+FROM TFP:tensorboard
+ADD . /root
+WORKDIR /root
+RUN sudo pacman -S tensorflow tensorboard
+CMD ["tensorboard --logdir tf_files/training_sumaries"]
+
+FROM TFP:tensorflow
+RUN sudo pacman -S python2
+WORKDIR /root
+RUN sudo pacman -S python -S python2
+CMD ["./retrain"]

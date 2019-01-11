@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web: 
+    build: .
+    ports:
+      - "6006:6006"
+    volumes:
+      - .:/root
+  tensorboard:
+    image: "TFP:tensorboard"
+  tensorflow:
+    image: "TFP:tensorflow"
